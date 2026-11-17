@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en" data-page="home">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>HOLD ON: Through Time</title>
+    <meta name="description" content="HOLD ON: Through Time — a one-finger survival game on a journey through the ages." />
+    <meta name="theme-color" content="#07080d" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+
+    <header class="topbar" id="top">
+      <a class="brand" href="./" aria-label="HOLD ON: Through Time, home" data-i18n-label="brand.home">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>HOLD ON</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only" data-i18n="menu">Menu</span>
+        <span class="menu-bars" aria-hidden="true"></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main" data-i18n-label="nav.main">
+        <a href="#journey" data-i18n="nav.journey">Journey</a>
+        <a href="#demo" data-i18n="nav.demo">Demo</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+      </nav>
+      <!-- Sprachschalter (assets/js/main.js): Wahl wird nur lokal im Browser gespeichert -->
+      <div class="lang-toggle" role="group" aria-label="Language" data-i18n-label="lang.group">
+        <button type="button" data-set-lang="en" lang="en" aria-label="English" aria-pressed="true">EN</button>
+        <button type="button" data-set-lang="de" lang="de" aria-label="Deutsch" aria-pressed="false">DE</button>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- ========== HERO ========== -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-sky" aria-hidden="true">
+          <div class="stars stars-far"></div>
+          <div class="stars stars-near"></div>
+          <div class="halo"></div>
+          <div class="orbit orbit-1"></div>
+          <div class="orbit orbit-2"></div>
+          <div class="orbit orbit-3"></div>
+          <div class="finger-dot"></div>
+        </div>
+
+        <div class="hero-content">
+          <h1 class="hero-title" id="hero-title">
+            <span class="title-main">HOLD ON</span>
+            <span class="title-sub">Through Time</span>
+          </h1>
+          <p class="claim" data-i18n-html="hero.claim">One Finger. <span>Through Time.</span> Survive.</p>
+
+          <ul class="stores" aria-label="Availability" data-i18n-label="stores.label">
+            <li class="store">
+              <svg class="store-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h10M7 21h10M8 3c0 4 3 5.5 4 9-1 3.5-4 5-4 9M16 3c0 4-3 5.5-4 9 1 3.5 4 5 4 9" /></svg>
+              <!-- Offizielle Badges von Apple erst mit echtem App-Store-Link (Markenrichtlinien) -->
+              <span class="store-text"><small>App Store</small><strong data-i18n="stores.soon">Coming Soon</strong></span>
+            </li>
+            <li class="store store-later">
+              <svg class="store-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h10M7 21h10M8 3c0 4 3 5.5 4 9-1 3.5-4 5-4 9M16 3c0 4-3 5.5-4 9 1 3.5 4 5 4 9" /></svg>
+              <span class="store-text"><small>Google Play</small><strong data-i18n="stores.later">Coming Later</strong></span>
+            </li>
+          </ul>
+        </div>
+
+        <a class="scroll-cue" href="#journey" aria-label="Scroll to the journey through time" data-i18n-label="hero.scroll">
+          <span aria-hidden="true"></span>
+        </a>
+      </section>
+
+      <!-- ========== JOURNEY THROUGH TIME ========== -->
+      <section class="section journey" id="journey" aria-labelledby="journey-title">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="journey.eyebrow">The journey</p>
+          <h2 id="journey-title" data-i18n="journey.title">A Journey Through Time</h2>
+          <p class="lead" data-i18n="journey.lead">Twelve epochs. One finger. How far through time can you hold on?</p>
+        </div>
+
+        <ol class="timeline">
+          <!--
+            Die zwölf Zeitalter aus dem Spiel, in Spielreihenfolge. Englisch hier, Deutsch in
+            assets/js/i18n.js (epoch.N.name / epoch.N.desc). data-name-de ist der Name im Spiel.
+            data-epoch und epoch-num nicht verändern.
+          -->
+          <li class="epoch reveal" data-epoch="1" data-name-de="Urozean">
+            <span class="epoch-num">01</span>
+            <span class="epoch-name" data-i18n="epoch.1.name">Primordial Ocean</span>
+            <p class="epoch-desc" data-i18n="epoch.1.desc">Sulphur bubbles rise through the first dark waters.</p>
+          </li>
+          <li class="epoch reveal" data-epoch="2" data-name-de="Erste Zellen">
+            <span class="epoch-num">02</span>
+            <span class="epoch-name" data-i18n="epoch.2.name">First Cells</span>
+            <p class="epoch-desc" data-i18n="epoch.2.desc">Life begins small: soft amoebas wander through the water.</p>
+          </li>
+          <li class="epoch reveal" data-epoch="3" data-name-de="Leben im Meer">
+            <span class="epoch-num">03</span>
+            <span class="epoch-name" data-i18n="epoch.3.name">Life in the Sea</span>
+            <p class="epoch-desc" data-i18n="epoch.3.desc">Jellyfish, predatory fish and puffers fill the deep.</p>
+          </li>
+          <li class="epoch reveal" data-epoch="4" data-name-de="Das Land wird grün">
+            <span class="epoch-num">04</span>
+            <span class="epoch-name" data-i18n="epoch.4.name">The Land Turns Green</span>
+            <p class="epoch-desc" data-i18n="epoch.4.desc">Leaves drift and giant dragonflies whir over the first green land.</p>
+          </li>
+          <li class="epoch reveal" data-epoch="5" data-name-de="Zeitalter der Dinosaurier">
+            <span class="epoch-num">05</span>
+            <span class="epoch-name" data-i18n="epoch.5.name">Age of the Dinosaurs</span>
+            <p class="epoch-desc" data-i18n="epoch.5.desc">Raptors race and pterosaurs circle through the dusty air.</p>
+          </li>
+          <li class="epoch reveal" data-epoch="6" data-name-de="Eiszeit">
+            <span class="epoch-num">06</span>
+            <span class="epoch-name" data-i18n="epoch.6.name">Ice Age</span>
+            <p class="epoch-desc" data-i18n="epoch.6.desc">Snow falls, snowballs roll and frost bats beat their wings.</p>
+          </li>
+          <li class="epoch reveal" data-epoch="7" data-name-de="Die ersten Menschen">
+            <span class="epoch-num">07</span>
+            <span class="epoch-name" data-i18n="epoch.7.name">The First Humans</span>
+            <p class="epoch-desc" data-i18n="epoch.7.desc">Embers glow above campfires as boulders roll past.</p>
+          </li>
+          <li class="epoch reveal" data-epoch="8" data-name-de="Die ersten Städte">
+            <span class="epoch-num">08</span>
+            <span class="epoch-name" data-i18n="epoch.8.name">The First Cities</span>
+            <p class="epoch-desc" data-i18n="epoch.8.desc">Lit windows rise into the night, watched by stone guardians.</p>
+          </li>
+          <li class="epoch reveal" data-epoch="9" data-name-de="Zukunft">
+            <span class="epoch-num">09</span>
+            <span class="epoch-name" data-i18n="epoch.9.name">The Future</span>
+            <p class="epoch-desc" data-i18n="epoch.9.desc">Robots and drones patrol a bright, electric tomorrow.</p>
+          </li>
+          <li class="epoch reveal" data-epoch="10" data-name-de="Raumfahrt">
+            <span class="epoch-num">10</span>
+            <span class="epoch-name" data-i18n="epoch.10.name">Spaceflight</span>
+            <p class="epoch-desc" data-i18n="epoch.10.desc">Among the stars, asteroids tumble and satellites turn.</p>
+          </li>
+          <li class="epoch reveal" data-epoch="11" data-name-de="Die Sterne verlöschen">
+            <span class="epoch-num">11</span>
+            <span class="epoch-name" data-i18n="epoch.11.name">The Stars Fade</span>
+            <p class="epoch-desc" data-i18n="epoch.11.desc">The last stars glow red as restless energy pulses in the dark.</p>
+          </li>
+          <li class="epoch reveal" data-epoch="12" data-name-de="Ende des Universums">
+            <span class="epoch-num">12</span>
+            <span class="epoch-name" data-i18n="epoch.12.name">End of the Universe</span>
+            <p class="epoch-desc" data-i18n="epoch.12.desc">Reality cracks open, and nothing holds its shape.</p>
+          </li>
+        </ol>
+      </section>
+
+      <!-- ========== DEMO ========== -->
+      <section class="section demo" id="demo" aria-labelledby="demo-title">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="demo.eyebrow">Try it</p>
+          <h2 id="demo-title" data-i18n="demo.title">Try It in Your Browser</h2>
+        </div>
+
+        <!--
+          Platz für die spätere Browser-Demo. Die Demo wird später als eigenes Paket hier eingebunden,
+          z. B. als <iframe src="demo/"> im Element #demo-stage. Bis dahin: nur der Hinweis.
+        -->
+        <div class="demo-frame reveal">
+          <div class="demo-stage" id="demo-stage" aria-live="polite">
+            <div class="demo-glow" aria-hidden="true"></div>
+            <div class="demo-dot" aria-hidden="true"></div>
+            <p class="demo-label" data-i18n="demo.label">Play Demo</p>
+            <p class="demo-status" data-i18n="demo.status">Coming Later</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== ABOUT ========== -->
+      <section class="section about" id="about" aria-labelledby="about-title">
+        <div class="about-inner reveal">
+          <p class="eyebrow" data-i18n="about.eyebrow">About the game</p>
+          <h2 id="about-title" data-i18n="about.title">Hold on. Don’t let go.</h2>
+          <p data-i18n="about.p1">
+            HOLD ON: Through Time is a one-finger survival game. Place your finger on the screen and keep it
+            there — every movement guides you, every release ends the run.
+          </p>
+          <p data-i18n="about.p2">
+            Your path leads through different ages of time. Stay focused, stay calm, and see how far your
+            journey takes you.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <a class="brand brand-footer" href="./"><span class="brand-dot" aria-hidden="true"></span><span>HOLD ON</span><em>Through Time</em></a>
+        <nav class="footer-nav" aria-label="Footer" data-i18n-label="nav.footer">
+          <a href="#journey" data-i18n="nav.journey">Journey</a>
+          <a href="#demo" data-i18n="nav.demo">Demo</a>
+          <a href="#about" data-i18n="nav.about">About</a>
+          <a href="privacy/" data-i18n="nav.privacy">Privacy Policy</a>
+        </nav>
+        <p class="copyright">© <span data-year>2026</span> HOLD ON: Through Time. <span data-i18n="footer.rights">All rights reserved.</span></p>
+      </div>
+    </footer>
+
+    <script src="assets/js/i18n.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>
