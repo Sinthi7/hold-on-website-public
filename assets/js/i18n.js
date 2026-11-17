@@ -7,7 +7,7 @@ window.HOLDON_DE = {
   'home.title': 'HOLD ON: Through Time',
   'home.description': 'HOLD ON: Through Time – ein Ein-Finger-Survival-Spiel auf einer Reise durch die Zeitalter.',
   'privacy.title': 'Datenschutzerklärung · HOLD ON: Through Time',
-  'privacy.description': 'Datenschutzerklärung für HOLD ON: Through Time (Entwurf).',
+  'privacy.description': 'Datenschutzerklärung für HOLD ON: Through Time.',
 
   // Kopfzeile, Navigation, Fusszeile
   'skip': 'Zum Inhalt springen',
