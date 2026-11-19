@@ -157,17 +157,30 @@
         </div>
 
         <!--
-          Platz für die spätere Browser-Demo. Die Demo wird später als eigenes Paket hier eingebunden,
-          z. B. als <iframe src="demo/"> im Element #demo-stage. Bis dahin: nur der Hinweis.
+          Browser-Demo (Build aus dem Spiel-Repository, npm run build:demo), auch direkt unter demo/ erreichbar.
+          Vor dem Klick: nur eine gezeichnete Urozean-Vorschau (assets/js/demo-embed.js), KEIN Spielcode, kein Ton.
+          Erst "Demo spielen" lädt die echte Demo als iframe in die Spalte und blendet die Vorschau aus.
+          Links und rechts: dezente Animationen zum aktuellen Zeitalter (assets/js/demo-ambience.js).
+          Ohne JavaScript öffnet der Link die Demo-Seite.
         -->
         <div class="demo-frame reveal">
-          <div class="demo-stage" id="demo-stage" aria-live="polite">
-            <div class="demo-glow" aria-hidden="true"></div>
-            <div class="demo-dot" aria-hidden="true"></div>
-            <p class="demo-label" data-i18n="demo.label">Play Demo</p>
-            <p class="demo-status" data-i18n="demo.status">Coming Later</p>
+          <div class="demo-stage" id="demo-stage">
+            <canvas class="demo-ambience" id="demo-ambience" aria-hidden="true"></canvas>
+            <div class="demo-column" id="demo-column">
+              <canvas class="demo-preview" id="demo-preview" aria-hidden="true"></canvas>
+            </div>
+            <a class="demo-poster demo-link" id="demo-start" href="demo/">
+              <span class="demo-dot" aria-hidden="true"></span>
+              <span class="demo-label demo-button" data-i18n="demo.label">Play Demo</span>
+              <span class="demo-status" data-i18n="demo.status">Free · First 3 Epochs</span>
+            </a>
           </div>
         </div>
+        <p class="demo-tools" id="demo-tools" hidden>
+          <button class="demo-tool" id="demo-close" type="button" data-i18n="demo.close">Close demo</button>
+          <span class="demo-sep" aria-hidden="true">·</span>
+          <a class="demo-tool" href="demo/" data-i18n="demo.open">Open as full page</a>
+        </p>
       </section>
 
       <!-- ========== ABOUT ========== -->
@@ -202,5 +215,7 @@
 
     <script src="assets/js/i18n.js" defer></script>
     <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/demo-ambience.js" defer></script>
+    <script src="assets/js/demo-embed.js" defer></script>
   </body>
 </html>

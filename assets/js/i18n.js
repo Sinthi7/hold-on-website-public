@@ -62,7 +62,9 @@ window.HOLDON_DE = {
   'demo.eyebrow': 'Ausprobieren',
   'demo.title': 'Im Browser ausprobieren',
   'demo.label': 'Demo spielen',
-  'demo.status': 'Später verfügbar',
+  'demo.status': 'Kostenlos · Die ersten 3 Zeitalter',
+  'demo.close': 'Demo schliessen',
+  'demo.open': 'Als eigene Seite öffnen',
 
   // Über das Spiel
   'about.eyebrow': 'Über das Spiel',

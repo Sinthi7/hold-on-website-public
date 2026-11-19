@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+    <meta name="theme-color" content="#070a1c" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>Hold On</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <script type="module" crossorigin src="./assets/index-D-1H2k_D.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CHdANdi_.css">
+  </head>
+  <body>
+    <div class="stage" id="stage">
+      <!-- Texte: Englisch als Standard, beim Start in die Gerätesprache übersetzt (data-i18n, src/i18n) -->
+      <canvas id="c" role="img" data-i18n-label="canvas.label" aria-label="Hold On game field. Keep your finger down and move freely to dodge the obstacles."></canvas>
+      <div class="hud">
+        <div class="top">
+          <div class="chip"><span class="coin"></span><span id="coins">0</span></div>
+          <div class="rec"><span data-i18n="hud.best">Best</span><b id="best">0</b></div>
+        </div>
+        <div class="score" id="score">0</div>
+        <div class="epoch" id="epochName">Primordial Ocean</div>
+      </div>
+      <div class="banner" id="banner"></div>
+      <div class="panel" id="panel"></div>
+      <div class="settings" id="settings" role="dialog" aria-modal="true" aria-labelledby="settingsTitle">
+        <div class="sheet">
+          <div class="sheet-head">
+            <h2 class="eyebrow" id="settingsTitle" data-i18n="settings.title">Settings</h2>
+            <button class="close" type="button" data-close data-i18n-label="settings.close" aria-label="Close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg></button>
+          </div>
+          <button class="switch" type="button" role="switch" aria-checked="true" data-setting="music"><span data-i18n="settings.music">Music</span><i></i></button>
+          <button class="switch" type="button" role="switch" aria-checked="true" data-setting="sfx"><span data-i18n="settings.sfx">Sound effects</span><i></i></button>
+          <button class="switch" type="button" role="switch" aria-checked="true" data-setting="haptics"><span data-i18n="settings.haptics">Haptics</span><i></i></button>
+          <!-- Nur sichtbar, wenn Google Datenschutz-Optionen verlangt (src/ui/settings.js) -->
+          <button class="switch privacy-row" type="button" data-privacy hidden><span data-i18n="settings.privacyOptions">Privacy Options</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></button>
+          <!-- Öffnet die Datenschutzseite in der App (src/ui/settings.js, src/services/privacyPolicy.js) -->
+          <button class="switch privacy-row" type="button" data-policy hidden><span data-i18n="settings.privacyPolicy">Privacy Policy</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></button>
+        </div>
+      </div>
+    </div>
+    <noscript>Hold On needs JavaScript. · Hold On braucht JavaScript.</noscript>
+  </body>
+</html>
