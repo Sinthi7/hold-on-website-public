@@ -25,7 +25,8 @@ window.HOLDON_DE = {
   // Start
   'hero.claim': 'Ein Finger. <span>Durch die Zeit.</span> Überleben.',
   'stores.label': 'Verfügbarkeit',
-  'stores.soon': 'Demnächst',
+  'stores.available': 'Jetzt verfügbar',
+  'stores.download': 'Im App Store laden',
   'stores.later': 'Später verfügbar',
   'hero.scroll': 'Zur Reise durch die Zeit scrollen',
 
